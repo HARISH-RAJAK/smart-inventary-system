@@ -9,8 +9,11 @@ import * as cheerio from 'cheerio';
 const app = express();
 const port = 5000;
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views')); // This should match where your views folder is
 
-app.use(express.static(path.join(path.resolve(),'./public')));
+
+// app.use(express.static(path.join(path.resolve(),'./public')));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
