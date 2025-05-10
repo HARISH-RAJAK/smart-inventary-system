@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>About the Developers - Smart Inventory Management</title>
+    <style>
+        /* Dark Mode Theme Colors */
+        :root {
+            --bg-primary: #121212;
+            --bg-secondary: #1f1f1f;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --accent: #bb86fc;
+            --error: #cf6679;
+            --success: #03dac6;
+            --warning: #ffb74d;
+        }
+
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--bg-secondary);
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Developer Info Section */
+        .developer-section {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .developer-section h1 {
+            font-size: 3rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .developer-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .developer-card {
+            background-color: var(--bg-primary);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .developer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .developer-card h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+        }
+
+        .developer-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .developer-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .developer-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-secondary);
+            color: var(--text-secondary);
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .developer-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Smart Inventory</div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Electronics</a></li>
+                    <li><a href="/grocery">Grocery</a></li>
+                    <li><a href="/developers">Manage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="developer-section">
+            <h1>Meet the Developers</h1>
+            <p>We are a team of passionate developers working on creating a seamless experience for managing your inventory.</p>
+
+            <div class="developer-info">
+
+                <div class="developer-card">
+                    <img src="/harish.png" alt="Developer 1">
+                    <h3>Harish Rajak</h3>
+                    <p>Lead Developer & AI Enthusiast</p>
+                    <a href="https://www.linkedin.com/in/harish-rajak" target="_blank">LinkedIn</a>
+                </div>
+
+                <div class="developer-card">
+                    <img src="/mohit.jpg" alt="Developer 2">
+                    <h3>Mohit Parmar</h3>
+                    <p>Full Stack Developer & Web Designer</p>
+                    <a href="https://www.linkedin.com/in/mohit-parmar-b01963348/" target="_blank">LinkedIn</a>
+                </div>
+
+                
+                <div class="developer-card">
+                    <img src="/shyam.jpg" alt="Developer 3">
+                    <h3>Shyam Parmar </h3>
+                    <p>Frontend Developer & UI/UX Designer</p>
+                    <a href="https://www.linkedin.com/in/shyam-parmar-579982348/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Smart Inventory Management System. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
